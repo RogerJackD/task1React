@@ -14,8 +14,8 @@ export const BasicLogin = () => {
     
   return (
     <>
-      <form className="flex flex-col gap-2 bg-gray-50 m-4 p-5 rounded shadow">
-        <h1 className="text-3xl font-medium">Tarea1 - credenciales</h1>
+      <form className="flex flex-col gap-2 bg-gray-50 p-5 rounded shadow">
+        <h1 className="text-3xl font-medium text-center"> tarea2 credenciales</h1>
         <div className="flex flex-col gap-2">
           <label 
             htmlFor="username">
@@ -33,14 +33,14 @@ export const BasicLogin = () => {
 
         <div className="flex flex-col gap-2">
           <label 
-            htmlFor="username">
+            htmlFor="password">
             Password:</label>
           <input
             className="border rounded px-2 py-1 outline-none text-sm"
             value={password}
             type="password"
-            name="username"
-            id="username"
+            name="password"
+            id="password"
             placeholder="*****"
             onChange={({target}) => setPassword(target.value)}
           />
